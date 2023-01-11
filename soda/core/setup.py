@@ -14,8 +14,6 @@ package_name = "soda-core"
 package_version = "3.0.18"
 description = "Soda Core"
 
-# long_description = (pathlib.Path(__file__).parent.parent / "README.md").read_text()
-
 requires = [
     "markupsafe>=2.0.1,<=2.1.1",
     "Jinja2>=2.11,<4.0",
@@ -35,7 +33,7 @@ setup(
     author="Soda Data N.V.",
     author_email="info@soda.io",
     description="Soda Core library & CLI",
-    long_description=(Path(__file__).parents[2] / "README.md").read_text(),
+
     long_description_content_type="text/markdown",
     packages=find_namespace_packages(include=["soda*"]),
     install_requires=requires,
